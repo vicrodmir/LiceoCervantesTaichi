@@ -2,29 +2,82 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Demo + Descarga</title>
+  <title>Juego + Descarga</title>
   <style>
-    body{font-family:system-ui,Arial;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.4}
-    .card{border:1px solid #ddd;border-radius:14px;padding:18px;margin-top:14px}
-    a.btn{display:inline-block;padding:12px 16px;border-radius:12px;border:1px solid #111;text-decoration:none;margin:8px 8px 0 0}
+    body{
+      font-family:system-ui,Arial;
+      max-width:720px;
+      margin:40px auto;
+      padding:0 16px;
+      line-height:1.4;
+      background:#F6F1E3; /* crema claro */
+    }
+
+    /* Logo */
+    .logo-wrap{
+      display:flex;
+      justify-content:center;
+      margin-bottom:14px;
+    }
+    .logo-wrap img{
+      width:140px;        /* ajusta tamaño aquí */
+      max-width:45vw;
+      height:auto;
+    }
+
+    h1{ text-align:center; }
+
+    .card{
+      border:1px solid #ddd;
+      border-radius:14px;
+      padding:8px;
+      margin-top:12px;
+      background:#ffffffcc; /* blanco semitransparente para que se vea profesional */
+      backdrop-filter: blur(2px);
+    }
+
+    a.btn{
+      display:inline-block;
+      padding:10px 16px;
+      border-radius:10px;
+      border:1px solid #111;
+      text-decoration:none;
+      margin:8px 8px 0 0;
+      color:#111;
+      background:#fff;
+    }
+    a.btn:hover{ opacity:.9; }
   </style>
 </head>
+
 <body>
-  <h1>Acceso rápido</h1>
+  <!-- LOGO -->
+  <div class="logo-wrap">
+    <img src="Escudo Liceo-Photoroom.png" alt="Liceo Humanista Cervantes">
+  </div>
+
+  <h1>Bienvenido</h1>
+
   <div class="card">
-    <h2>1) Abrir Demo (HTML)</h2>
-    <p>Funciona en Android y iPhone desde el navegador.</p>
-    <a class="btn" href="./Liceo Curso de Programacion.html">Abrir demo</a>
+    <h2>1) Juega</h2>
+    <p>Funciona en Android/iPhone desde el navegador.</p>
+    <a class="btn" href="./LiceoCursoProgramacion.html">Tai Chi Fruit</a>
   </div>
 
   <div class="card">
     <h2>2) Descargar ZIP</h2>
-    <p>Descarga el archivo .zip para guardarlo.</p>
+    <p>Descarga el archivo .zip para guardarlo y jugar Off Line</p>
     <a class="btn" href="./LiceoCursoProgramacion.zip">Descargar ZIP</a>
   </div>
 
-  <p style="margin-top:26px;font-size:14px;color:#444">
+  <p style="margin-top:26px;font-size:14px;color:#444;text-align:center">
     Tip: en iPhone/Android puedes “Agregar a pantalla de inicio” para acceso rápido.
   </p>
+  
+  <div class="card">
+    <h2>3) Informes</h2>
+    <p>Curso de Programacion de Videojuegos</p>
+    <a class="btn" href="./LiceoCursoProgramacion.html">Informes</a>
+  </div>
 </body>
 </html>
